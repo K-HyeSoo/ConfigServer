@@ -1,0 +1,27 @@
+#Eureka Client
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        service-url:
+            defaultZone: ${EUREKA_URL:http://localhost:9020/eureka/}
+        register-with-eureka: true
+        fetch-registry: true
+
+spring:
+    application:
+        name: CONFIG-SERVER-TEST
+    profiles:
+        active: default
+    cloud:
+        config:
+            server:
+                git:
+                    #깃 허브 주소
+                    uri: https://github.com/K-HyeSoo/config-repo-test
+                    username: K-HyeSoo
+                    #? ??
+                    password: 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
+
+server:
+    port: 9030
