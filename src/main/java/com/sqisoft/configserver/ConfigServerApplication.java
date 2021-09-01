@@ -13,7 +13,7 @@ public class ConfigServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConfigServerApplication.class, args);
 
-        // jenkins 자동 빌드 테스트 3
+        // 시간 지나고 자동 빌드 테스트
     }
 
 }
